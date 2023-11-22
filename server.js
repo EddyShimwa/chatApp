@@ -66,7 +66,6 @@ app.post('/login', async (req, res) => {
       const isPasswordValid = await bcrypt.compare(password, user.password);
 
       if (isPasswordValid) {
-        // Create JWT token
         const token = jwt.sign({ userId: user.id, username }, secretKey);
         res.json({ token });
       } else {
