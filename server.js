@@ -72,7 +72,7 @@ app.post('/login', async (req, res) => {
         res.status(401).json({ error: 'Invalid credentials' });
       }
     } else {
-      res.status(401).json({ error: 'Invalid credentials' });
+      res.status(401).json({ error: ' incorrect credentials' });
     }
   } catch (error) {
     console.error(error);
