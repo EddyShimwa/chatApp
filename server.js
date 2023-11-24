@@ -24,7 +24,7 @@ const pool = new Pool({
 
 app.use(bodyParser.json());
 
-const secretKey = PROCESS.env.JWT_SECRET_KEY;
+const secretKey = process.env.SECRET_KEY;
 
 
 app.post('/register', async (req, res) => {
@@ -50,6 +50,16 @@ app.post('/register', async (req, res) => {
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
     res.send('Welcome to the chat app!')
+});
+
+app.get('/messages', async (req, res) => {
+  try {
+    const result = await pool.query('SELECT * FROM messages');
+    res.json(result.rows);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
 });
 
 app.post('/login', async (req, res) => {
