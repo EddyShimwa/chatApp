@@ -19,7 +19,7 @@ const createUserTable = `
 
 pool.query(createUserTable, (err, res) => {
   if (err) console.error(err);
-  else console.log('Users table is ready');
+  else console.log('Table for users is ready');
 });
 
 module.exports = pool;
