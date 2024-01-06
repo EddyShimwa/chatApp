@@ -1,35 +1,116 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> My RealTime Chat</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WhatsApp Clone</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="chat-container">
-    <ul id="messages"></ul>
-    <input id="message-input" style="border: 1px solid rgb(6, 44, 16); width: 200px; padding: 15px; margin: 8px; border-radius: 10px;" autocomplete="off" placeholder="add text here"/><button onclick="sendMessage()" style="background-color: green; padding: 15px; border-radius: 10px; border: 1px solid rgb(255, 255, 255)">Send</button>
-  </div>
+    <div class="container">
+        <div class="left-container">
+            <h2>WhatsApp Clone</h2>
+            <ul>
+                <li>
+                    <i class="fa fa-commenting" aria-hidden="true"></i>
+                    
+                </li>
+                <li>Community</li>
+                <li>Updates</li>
+                <li>Calls</li>
+                <li>Channels</li>
+            </ul>
+        </div>
+        <div class="middle-container">
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+            <ul class="chat-list">
+                <li class="users">
+                    <img src="./imgs/profile.webp" class="profile-pic">
+                    John Doe
+                    <div class="time">
+                        <h6>05:23 pm</h6>
+                        <div id="numbers">
+                            <h5>20</h5>
+                        </div>
+                    </div>
+                </li>
+                <li class="users">
+                    <img src="./imgs/profile.webp" class="profile-pic">
+                    John Doe
+                    <div class="time">
+                        <h6>05:23 pm</h6>
+                        <div id="numbers">
+                            <h5>20</h5>
+                        </div>
+                    </div>
+                </li>
+                <li class="users">
+                    <img src="./imgs/profile.webp" class="profile-pic">
+                    John Doe
+                    <div class="time">
+                        <h6>05:23 pm</h6>
+                        <div id="numbers">
+                            <h5>20</h5>
+                        </div>
+                    </div>
+                </li>
+                <li class="users">
+                    <img src="./imgs/profile.webp" class="profile-pic">
+                    John Doe
+                    <div class="time">
+                        <h6>05:23 pm</h6>
+                        <div id="numbers">
+                            <h5>20</h5>
+                        </div>
+                    </div>
+                </li>
+                <li class="users">
+                    <img src="./imgs/profile.webp" class="profile-pic">
+                    John Doe
+                    <div class="time">
+                        <h6>05:23 pm</h6>
+                        <div id="numbers">
+                            <h5>20</h5>
+                        </div>
+                    </div>
+                </li>
+                <li class="users">
+                    <img src="./imgs/profile.webp" class="profile-pic">
+                    John Doe
+                    <div class="time">
+                        <h6>05:23 pm</h6>
+                        <div id="numbers">
+                            <h5>20</h5>
+                        </div>
+                    </div>
+                </li>
 
-  <script src="http://localhost:3000/socket.io/socket.io.js"></script>
-  <script>
-    const socket = io();
-    socket.on('message', (msg) => {
-      const messages = document.getElementById('messages');
-      const li = document.createElement('li');
-      li.appendChild(document.createTextNode(msg));
-      messages.appendChild(li);
-    });
+  
+        </ul>
 
-    function sendMessage() {
-      const input = document.getElementById('message-input');
-      const message = input.value;
-      socket.emit('message', message);
-      input.value = '';
-      console.log(message);
-    }
-  </script>
+        </div>
+        <div class="right-container">
+            <div class="chat-header">
+                <img src="./imgs/profile.webp" class="profile-pic">
+              
+                <div class="chat-header-details">
+                    <h4>Ndahiro</h4>
+                    <div class="status">
+                        <img src="./imgs/green-dot.png" id="online-icon">
+                        <h5>online</h5>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="chat-messages">
+                <!-- Chat messages will be displayed here -->
+            </div>
+            <!-- Add a chat input section if needed -->
+        </div>
+    </div>
 </body>
 </html>

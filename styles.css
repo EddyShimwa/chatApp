@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-container {
+    flex: 1;
+    background-color: #075e54;
+    color: #fff;
+    padding: 20px;
+}
+
+.left-container h2 {
+    margin-bottom: 20px;
+}
+
+.left-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-container li {
+    margin-bottom: 10px;
+}
+
+.middle-container {
+    flex: 2;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.search-bar {
+    margin-bottom: 30px;
+    width: 80%;
+   
+}
+
+.search-bar input{
+width: 100%;
+   margin-left: 10%;
+   padding: 10px;
+   border-radius: 10px;
+}
+
+.chat-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.chat-list li {
+    padding: 5px;
+    border-radius: 10px;
+    height: 80px
+}
+.chat-list li:hover {
+    background-color: #e7e7e7;
+}
+
+.right-container {
+    flex: 3;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+}
+
+.chat-header {
+    background-color: #e8f0ef;
+    display: flex;
+    color: #000;
+    padding: 8px;
+    align-items: center;
+}
+
+.chat-messages {
+    padding: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+.profile-pic {
+   width: 12%;
+   height: auto;
+   border-radius: 50px;
+   margin-right: 5%;
+}
+.users {
+  display: flex;
+  align-items: center;
+
+}
+
+.time {
+    font-weight: 100;
+    margin-left: 50%;
+    margin-bottom: 2%;
+    color: gray
+}
+
+#numbers{
+    background-color: #06aa37;
+    color: #fff;
+    width: fit-content;
+    border-radius: 50px;
+    margin-left: 30%;
+}
+#numbers h5 {
+    padding: 6px
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.chat-header-details h4{
+    margin-top: 0;
+    margin-bottom: 15%;
+}
+.status h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 8px;
+    color: gray
+}
+#online-icon {
+    width: 8px;
+    height: 8px;
+    background-color: #06aa37;
+    border-radius: 50px;
+}
