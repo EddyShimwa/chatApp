@@ -97,9 +97,10 @@ width: 100%;
 
 .time {
     font-weight: 100;
-    margin-left: 50%;
-    margin-bottom: 2%;
-    color: gray
+    margin-left: 26%;
+    margin-bottom: 1%;
+    color: gray;
+    position: fixed
 }
 
 #numbers{
