@@ -136,11 +136,17 @@ width: 100%;
     border-radius: 50px;
 }
 
+.conversation {
+    display: flex;
+    flex-direction: column;
+    background-color: #c6e2de9d;
+    background-size: cover;
+}
 .message {
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
-    max-width: 70%;
+    width: fit-content;
     overflow-wrap: break-word;
     clear: both; 
 }
@@ -148,6 +154,7 @@ width: 100%;
 .sent {
     background-color: #dcf8c6; 
     align-self: flex-end; 
+   
 }
 
 .received {
