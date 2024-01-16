@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
 }
@@ -11,13 +11,13 @@ body {
 }
 
 .left-container {
-    flex: 1;
-    background-color: #075e54;
-    color: #fff;
-    padding: 20px;
+    width: 12%;
+    background-color: #ffffff;
+    color: #191919;
+    padding: 2%;
 }
 
-.left-container h2 {
+.left-container h4 {
     margin-bottom: 20px;
 }
 
