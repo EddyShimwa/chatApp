@@ -202,3 +202,31 @@ width: 100%;
     height: 10%; 
     margin-left: 10%; 
 }
+
+.type-message {
+    margin-top: 35%;
+    display: flex;
+    align-items: center;
+
+}
+.type-message input{
+    width: 80%;
+    padding: 1%;
+    border: 2px solid rgb(156, 156, 156);
+    border-radius: 10px;
+    margin-right: 6px ;
+} 
+.type-message-icons {
+   width: 20px;
+   padding: 8px;
+   border: 1px solid rgba(128, 128, 128, 0.216);
+   border-radius: 50%;
+   margin-right: 6px;
+}
+
+.type-message-icon:hover {
+    display: none;
+    width: 20px;
+    padding: 8px;
+    background-color: #241f1f;
+}
