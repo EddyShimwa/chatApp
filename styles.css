@@ -217,14 +217,14 @@ width: 100%;
     display: flex;
 }
 .cam-micc {
-    width:6%;
-    height: 10%;  
+    width:4%;
+    height: 8%;  
     margin-left: 65%;
 }
 
 .mic-cam {
-    width:6%;
-    height: 10%; 
+    width:4%;
+    height: 7%; 
     margin-left: 10%; 
 }
 
