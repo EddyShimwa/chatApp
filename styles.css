@@ -255,3 +255,14 @@ width: 100%;
     padding: 8px;
     background-color: #241f1f;
 }
+
+#emojiContainer {
+    z-index: 100;
+    width: 30%;
+    font-size: 1.3em;
+    position: absolute;
+    border: 1px solid #ccc;
+    padding: 4px;
+    background-color: #fff;
+    margin-bottom: 18%;
+}
