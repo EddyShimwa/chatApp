@@ -256,6 +256,12 @@ width: 100%;
     background-color: #241f1f;
 }
 
+.emojis_switch img:hover{
+    background-color: #d7d7d7;
+    transition: 0.3s;
+}
+
+
 #emojiContainer {
     z-index: 100;
     width: 30%;
