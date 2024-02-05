@@ -261,6 +261,10 @@ width: 100%;
     transition: 0.3s;
 }
 
+.plus-sign img:hover{
+    background-color: #d7d7d7;
+    transition: 0.3s;
+}
 
 #emojiContainer {
     z-index: 100;
