@@ -68,15 +68,26 @@ width: 100%;
 
 .right-container {
     flex: 3;
-    padding: 20px;
+    padding: 12px;
     border-left: 1px solid #ccc;
 }
 
+.notes {
+    display: flex;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    background-color: #fcdeb7;
+    text-align: center;
+    color: rgb(75, 75, 75)
+}
+
 .chat-header {
-    background-color: #e8f0ef;
+    background-color: #ebeeed;
     display: flex;
     color: #000;
-    padding: 6px;
+    padding: 4px;
     align-items: center;
 }
 
@@ -91,11 +102,17 @@ width: 100%;
    border-radius: 50px;
    margin-right: 5%;
 }
+
+.chat-header .profile-pic {
+    width: 8%;
+    
+}
 .users {
   display: flex;
   align-items: center;
 
 }
+
 
 .time {
     font-weight: 100;
@@ -138,11 +155,19 @@ width: 100%;
     border-radius: 50px;
 }
 
+.fa-lock{
+    margin-left: 5px;
+    color: gray;
+    margin-top: 20px;
+
+}
 .conversation {
     display: flex;
     flex-direction: column;
-    background-color: #c6e2de9d;
+    background-color: #e4eceb9d;
     background-size: cover;
+    height: 80vh;
+    overflow: auto;
 }
 .message {
     padding: 10px;
@@ -204,7 +229,7 @@ width: 100%;
 }
 
 .type-message {
-    margin-top: 35%;
+    margin-top: 2%;
     display: flex;
     align-items: center;
 
