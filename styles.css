@@ -266,6 +266,10 @@ width: 100%;
     transition: 0.3s;
 }
 
+.microphone img:hover{
+    background-color: #d7d7d7;
+    transition: 0.3s;
+}
 #emojiContainer {
     z-index: 100;
     width: 30%;
